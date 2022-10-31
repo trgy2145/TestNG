@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- bu da parelel suit test -->
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <test name="test1">
+        <classes>
+            <class name="parelelTest.Test1"/>
+
+
+        </classes>
+    </test>
+    <test name="test2">
+        <classes>
+
+            <class name="parelelTest.Test2"/>
+
+        </classes>
+    </test>
+</suite>
+
+        <!--  bu kod parelel method icin kullanılır..
+        <suite name="All Test Suite" parallel="methods" thread-count="2">  2 method var thread 2 yaptık
+        <test name="test1" >
+        <classes>
+            <class name="parelelTest.Test1"/>
+
+        </classes>
+        </test>
+                </suite>
+
+        -->
+        <!-- parelel classlar icin
+        <suite name="All Test Suite" parallel="classes" thread-count="2">
+    <test name="test1">
+        <classes>
+            <class name="parelelTest.Test1"/>
+            <class name="parelelTest.Test2"/>
+
+        </classes>
+    </test>
+</suite>
+        -->
